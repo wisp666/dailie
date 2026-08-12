@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "dailie-expo-oh8rk8",
-    "slug": "dailie-expo-oh8rk8",
+    "name": "Dailie Sky",
+    "slug": "dailie-sky",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "scheme": "dailiesky",
+    "plugins": [
+      ["expo-location", { "locationWhenInUsePermission": "Allow Dailie Sky to calculate local sky events for your widget." }]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dailie.sky"
     },
     "android": {
       "adaptiveIcon": {
