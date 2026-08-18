@@ -4,16 +4,16 @@ A React Native/Expo companion app for a large iPhone widget showing local Sun, M
 
 ## What works now
 
-- Foreground location permission with Toronto as a development fallback
-- Sunrise, sunset, moonrise, moonset and Moon illumination via `suncalc`
-- Nakshatra from the Moon's geocentric ecliptic longitude via `astronomy-engine`
-- Galactic Centre rise/set approximation (the useful anchor for Milky Way visibility)
-- A polished large-widget-style in-app preview
-- A SwiftUI WidgetKit starter in [`ios-widget`](./ios-widget)
+- A seven-day Toronto fixture with Sun, Moon and Milky Way rise/set times
+- Seven daily Thirukkurals with Tamil and English text
+- A selectable weekly strip and polished daily sky view
+- Typed, screen-owned loading/error/ready state
+- A versioned React Native-to-WidgetKit snapshot contract
+- A split SwiftUI WidgetKit model, timeline provider and view in [`ios-widget`](./ios-widget)
 
-Tamil month boundaries are currently approximate and the project contains three sample Kurals. Before production, use an authoritative Tamil Panchangam calculation/source and a licensed or public-domain complete 1,330-Kural dataset.
+The current week is intentionally dummy data. The existing astronomy helpers remain available for the next integration step. Tamil month boundaries are approximate and the project contains only seven sample Kurals. Before production, use authoritative astronomical and Tamil Panchangam calculations plus a licensed or public-domain complete 1,330-Kural dataset.
 
-## Develop on Linux
+## Develop
 
 ```bash
 npm install
